@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+            let r_amount = parseInt(document.getElementById("r_amount").value); //document.getElementById("r_amount").value;
+            let g_amount = parseInt(document.getElementById("g_amount").value);
+            let t_amount = parseInt(document.getElementById("t_amount").value);
+            let m_amount = parseInt(document.getElementById("m_amount").value);
+            let b_amount = parseInt(document.getElementById("b_amount").value);
+            let e_amount = parseInt(document.getElementById("e_amount").value);
+            let totalAmount = 0;
+            totalAmount= r_amount + g_amount + t_amount + m_amount + b_amount + e_amount;
+            alert("your total expense is: " + totalAmount);
+        }
+    </script>
+    <style>
+        body{
+            text-align: center;
+            font-family: "Times New Roman", serif;
+            background-color: #b4b4b4;
+        }
+
+        h1{
+            font-family: "Courier New", serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Expense Calculator</h1>
+    <div>
+        <form>
+       <input type="text" id="Rent" value="Rent" required>
+       <input type="number" id="r_amount" placeholder="Amount" required><br>
+       <input type="text" id="Grocery" value="Grocery" required>
+       <input type="number" id="g_amount" placeholder="Amount" required><br>
+       <input type="text" id="Transport" value="Transport" required>
+       <input type="number" id="t_amount" placeholder="Amount" required><br>
+       <input type="text" id="Medical" value="Medical" required>
+       <input type="number" id="m_amount" placeholder="Amount" required><br>
+       <input type="text" id="Bills" value="Bills" required>
+       <input type="number" id="b_amount" placeholder="Amount" required><br>
+       <input type="text" id="Entertainment" value="Entertainment" required>
+       <input type="number" id="e_amount" placeholder="Amount" required><br>
+       </form>
+    </div>
+    <br>
+    <br>
+    <input type="submit" value="Submit" onclick="myFunction()">
+</body>
+</html>
